@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Player Registration</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Softball Team Registration</h1>
+        <nav>
+            <ul>
+                <li><a href="history.html">Softball History</a></li>
+                <li><a href="schedule.html">Team Schedule</a></li>
+                <li><a href="registration.html">New Player Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Register as a New Player</h2>
+        <form id="registration-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="position">Preferred Position:</label>
+            <select id="position" name="position">
+                <option value="pitcher">Pitcher</option>
+                <option value="catcher">Catcher</option>
+                <option value="infielder">Infielder</option>
+                <option value="outfielder">Outfielder</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
